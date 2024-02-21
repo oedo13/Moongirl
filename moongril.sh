@@ -61,6 +61,7 @@ do
 		;;
 		'2')
 			cat index1.html >> index.html
+  			echo "<h2>`date +%F`</h2>">> index.html
 			ssh root@192.168.0.1 "nmap -u 127.0.0.1" >> index.html
 			cat index2.html >> index.html
 			firefox index.html
@@ -72,6 +73,7 @@ do
 			case $opcio2 in
 				'1')
 				cat index1.html >> index.html
+    				echo "<h2>`date +%F`</h2>">> index.html
 				ssh root@192.168.0.1 "service apache2 status" >> index.html
 				cat index2.html >> index.html
 				firefox index.html
@@ -79,6 +81,7 @@ do
 				;;
 				'2')
 				cat index1.html >> index.html
+    				echo "<h2>`date +%F`</h2>">> index.html
 				ssh root@192.168.0.1 "service bind9 status" >> index.html
 				cat index2.html >> index.html
 				firefox index.html
@@ -86,6 +89,7 @@ do
 				;;
 				'3')
 				cat index1.html >> index.html
+    				echo "<h2>`date +%F`</h2>">> index.html
 				ssh root@192.168.0.1 "service postfix status" >> index.html
 				cat index2.html >> index.html
 				firefox index.html
@@ -93,6 +97,7 @@ do
 				;;
 				'4')
 				cat index1.html >> index.html
+    				echo "<h2>`date +%F`</h2>">> index.html
 				ssh root@192.168.0.1 "service isc-dhcp-server status" >> index.html
 				cat index2.html >> index.html
 				firefox index.html
@@ -103,6 +108,7 @@ do
 		;;
 		'4')
 			cat index1.html >> index.html
+   			echo "<h2>`date +%F`</h2>">> index.html
 			ssh root@192.168.0.1 "lscpu" >> index.html
 			cat index2.html >> index.html
 			firefox index.html
@@ -110,6 +116,7 @@ do
 		;;
 		'5')
 			cat index1.html >> index.html
+   			echo "<h2>`date +%F`</h2>">> index.html
 			ssh root@192.168.0.1 "free -m" >> index.html
 			cat index2.html >> index.html
 			firefox index.html
